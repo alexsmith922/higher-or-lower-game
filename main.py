@@ -34,8 +34,13 @@ def game():
   print(f"Compare B: {influencer_b_name}, {influencer_b_description}, from {influencer_b_country}")
   
   #Check guess against follower count
-  def check_answer(guess, follower_count):
-    guess = input("Who has more followers? Type 'A' or 'B': ")
+  guess = input("Who has more followers? Type 'A' or 'B': ")
+  if guess == "A" or guess == "a":
+    guess = influencer_a_followers
+  else:
+    guess = influencer_b_followers
+
+    
     
 
   #Ask user to make a guess
